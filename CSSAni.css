@@ -1,0 +1,35 @@
+body{
+    background-color: aquamarine;
+}
+
+@keyframes slidein{
+    from{
+        transform:translateX(0%)
+    }
+    to{
+        transform:translateX(100%)
+    }
+
+}
+@keyframes wow{
+    from{
+        transform:translateY(0%)
+    }
+    to{
+        transform:translateY(1000%)
+    }
+}
+.anibox{
+    display:flex;
+    flex-direction:row;
+    animation-name: wow;
+    animation-duration: 5s
+}
+.anibox>div{
+    display:flex;
+    flex-direction:row;
+    animation-name: slidein;
+    animation-duration: 5s
+}
+
+
